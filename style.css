@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+}
+.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  /* display: flex; */
+  flex-wrap: wrap;
+  border-bottom-style: dashed;
+}
+.timeUpdater {
+  padding-top: 10ox;
+  float: left;
+  flex-wrap: wrap;
+}
+
+* {
+  border-collapse: collapse;
+}
+
+.img {
+  padding-left: 10px;
+  font: bold;
+  height: 30px;
+  width: auto;
+}
+.first {
+  color: green;
+}
+
+.last {
+  color: red;
+}
+
+.meteostations {
+  padding: 10px;
+  margin: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* class of the box which covers all details of one device */
+.DeviceBox {
+  text-align: center;
+  margin-bottom: 0px;
+  float: left;
+  height: auto;
+  width: 140px;
+}
+
+.Green {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: green;
+}
+
+.Yellow {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: rgb(89, 68, 3);
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.Red {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: red;
+}
+
+/* this class used in order to keep orgName in one line  */
+.orgName {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.grey-sides {
+  margin-left: -2px;
+  margin-bottom: -2px;
+
+  border-color: black rgb(108, 114, 108) !important;
+}
+
+.grey-left {
+  margin-left: -2px;
+  margin-bottom: -2px;
+
+  border-left-color: rgb(108, 114, 108) !important;
+}
+
+.grey-right {
+  margin-left: -2px;
+  margin-bottom: -2px;
+  border-right-color: rgb(108, 114, 108) !important;
+}
