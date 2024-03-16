@@ -37,7 +37,7 @@ let orgColors = {
 
 // this function used in order to fetch data of the devices from backend
 async function getDevices(token) {
-  const response = await fetch("http://oxus.amudar.io/api/meteoDevices", {
+  const response = await fetch("https://oxus.amudar.io/api/meteoDevices", {
     headers: {
       Authorization: "Bearer " + token,
     },
